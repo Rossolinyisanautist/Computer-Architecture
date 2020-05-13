@@ -72,6 +72,9 @@ int main(int argc, char **argv)
     printf("Enter x, a, c, m: ");
     scanf("%lf%lf%lf%lf", &x, &a, &c, &m);
 
+    double A, B;
+    printf("Enter b, c: ");
+    scanf("%lf%lf", &A, &B);
     arr[1] = x;
     c_rnd_gen(&arr[1], &a, &c, &m);
     printf("BEFORE\n");
@@ -80,7 +83,7 @@ int main(int argc, char **argv)
 
     i = 1;
     while(i < 33) {
-        c_fun(&arr[i], 2, 3);
+        c_fun(&arr[i], A, B);
         i++;
     }
     
